@@ -26,7 +26,7 @@ import { GiSolarPower, GiSpikedFence } from 'react-icons/gi'
 import { RiRemoteControlLine } from 'react-icons/ri'
 import Media from '../../Components/Media/Media'
 import useFormateDate from '../../hooks/useFormateDate'
-import Offline from '../../Components/ErrorComp/offline'
+import Offline from '../../Components/ErrorComp/Offline'
 import useSearchStore from '../../store/searchStore'
 
 const Property = () => {
