@@ -1,0 +1,76 @@
+.active_button {
+  background-color: #CBD5E0 !important;
+  border-bottom: 2px solid rgb(26 62 52);;
+}
+.active_button1 {
+  /* background-color: #CBD5E0 !important; */
+  border-bottom: 2px solid rgb(26 62 52) !important;
+}
+.active_button2 {
+  color: white !important
+}
+.main_text_color {
+    color: rgb(26 62 52) !important;
+}
+.main_bg {
+  background-color: rgb(26 62 52) !important;
+}
+/* src/index.css */
+
+  
+  html, body {
+    height: 100%;
+  }
+  body {
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Inter';
+    font-weight: 600;
+    min-height: 100vh;
+  }
+  
+.check_box {
+  transform: scale(1.5) !important;
+  margin-right: 10px;
+}
+.housinghub-icon {
+  width: 200px;
+  height: 40px;
+  fill: #000;
+  max-height: 30px;
+}
+.rContainer {
+  padding: 10px;
+}
+.leftEle {
+  min-width: 30%;
+}
+.txt-size {
+  /* font-size: 0.75em; */
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 1350px) {
+  /* Styles for screens smaller than or equal to 768px */
+  .txt-size {
+    font-size: 0.75em !important;
+  }
+}
+.inspection { 
+  display: block;
+  padding: 10px;
+  width: max-content;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0, 0.1);
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.paragraph {
+  text-indent: 10px;
+  line-height: 1.5;
+}
