@@ -16,7 +16,7 @@ import useGetPosts from '../../hooks/useGetPosts'
 import Item from '../../Components/Property/Property'
 import useGetPostsByParam from '../../hooks/useGetPostsByParam'
 import useSearchStore from '../../store/searchStore'
-import Offline from '../../Components/ErrorComp/offline'
+import Offline from '../../Components/ErrorComp/Offline'
 
 const View = () => {
     let {uid} = useParams()
