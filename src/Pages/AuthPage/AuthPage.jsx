@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, Container, Flex, useMediaQuery, Heading, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import AuthForm from '../../Components/AuthForm/AuthForm'
 import { BsHouse } from 'react-icons/bs'
@@ -6,18 +6,19 @@ import { useParams } from 'react-router-dom'
 
 const AuthPage = () => {
   const {param} = useParams()
+  const [isLargerThan500] = useMediaQuery('(min-width: 500px)')
   return (
     <Flex justifyContent={'center'} minH={'100vh'} alignItems={'center'}>
       <Container maxW={'6xl'} padding={0}>
-        <Flex justify={'center'}  py={8} gap={10}>
+        <Flex justify={'center'}  py={isLargerThan500 ? 8 : 2} gap={10}>
           <Box display={{base:"none", md: "block"}} >
             <Image src="/contact-us-img.jpeg" h={"650"} alt="phone img" borderRadius={'15px'}/>
           </Box>
-          <Box w={'500px'}>
-           <VStack spacing={4} p={6} align={"stretch"} w={'full'} boxShadow={'0 0.0625rem 0.25rem 0 rgba(0, 0, 0, 0.16)'}>
-              <Box display={'flex'}alignItems={'center'} justifyContent={'center'} textAlign={'center'} fontWeight={800}> 
+          <Box maxW={isLargerThan500 ? '500px' : 'full'}>
+           <VStack spacing={4} p={isLargerThan500 ? 6 : 3} align={"stretch"} w={'full'} boxShadow={'0 0.0625rem 0.25rem 0 rgba(0, 0, 0, 0.16)'}>
+              <Box display={'flex'}alignItems={'center'} justifyContent={'center'} maxW={'full'} px={2} textAlign={'center'} fontWeight={800}> 
                 {/* <Box display={{base:'block', md:'none'}}></Box> */}
-                <BsHouse size={'34'}/><Text fontWeight={'700'} fontSize={'2em'} className='main_text_color'><b>Housingsolutionshub.com</b></Text>
+                <BsHouse size={'34'}/><Text fontWeight={'700'} fontSize={'clamp(25px, 3vw, 33px)'} className='main_text_color'><b>Housingsolutionshub.com</b></Text>
               </Box>
               <AuthForm param={param}/>
               {/* <Box textAlign={"center"}><b>Get the app</b></Box>
