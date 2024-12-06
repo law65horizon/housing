@@ -128,7 +128,7 @@ const View = () => {
     // const {posts, isLoading} = useGetPosts(searchdata.sale_type)
     const {posts, isLoading} = useGetPostsByParam(searchdata)
     if(!isLoading && posts.length === 0) return <Offline />
-  return (<Box bg={'ButtonFace'} h={'full'}>
+  return (<Box bg={'white'} h={'full'}>
     <NavBarFilter searchdata={searchdata} />
     {/* <Container maxW={'6xl'} > */}
     <Container maxW={'6xl'} pt={{base: '154px', md:'142px', lg: '104px'}}>
