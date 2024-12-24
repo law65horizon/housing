@@ -228,7 +228,7 @@ const Property = () => {
                             <Box bg={'rgb(26 62 52)'} borderRadius={'5px'}><Text p={1} px={2}> {post[0]?.type} </Text></Box>
                             <Box bg={'rgb(26 62 52)'} borderRadius={'5px'}><Text px={2} p={1}> For {det_sale_type(post[0]?.sale_type)} </Text></Box>
                         </Box>
-                      </Flex>
+                      </Flex> 
                     </Box> 
                     <Text fontSize={24} px={2} fontWeight={'700'} w={'full'}>₦ {post[0]?.price} </Text>
                     <Text w={'full'}>

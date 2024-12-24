@@ -39,7 +39,7 @@ const HomePage = () => {
               <Box display={'flex'} justifyContent={'center'} alignItems={'center'}>
                 {true ? <FaRegStar size={24} /> : ''}
               </Box>
-              {}
+              {} 
             </Flex>
           ))}
         </Flex>

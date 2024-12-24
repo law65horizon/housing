@@ -6,7 +6,7 @@ import useAuthStore from '../../store/authStore';
 // import { auth, firestore } from '../../Firebase/Firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { auth, firestore } from '../../FireBase/FireBase';
-
+  
 const GoogleAuth = ({prefix}) => {
   const [signInWithGoogle, , , error] = useSignInWithGoogle(auth);
 	const showToast = useShowToast();

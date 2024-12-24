@@ -20,7 +20,7 @@ const AuthPage = () => {
                 {/* <Box display={{base:'block', md:'none'}}></Box> */}
                 <BsHouse size={'34'}/><Text fontWeight={'700'} fontSize={'clamp(25px, 3vw, 33px)'} className='main_text_color'><b>Housingsolutionshub.com</b></Text>
               </Box>
-              <AuthForm param={param}/>
+              <AuthForm param={param}/>   
               {/* <Box textAlign={"center"}><b>Get the app</b></Box>
                 <Flex gap={5} justifyContent={"center"}>
                   <Image src="/playstore.png" h={"10"} alt="playstore logo"/>

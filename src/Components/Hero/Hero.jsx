@@ -98,7 +98,6 @@ export const Hero = () => {
     // navigate(`/${searchparameters.sale_type}?${searchparameters?.searched.map((search) => search.join('+'))}`)
     navigate(`/${searchparameters.sale_type}?${searchparameters?.searched.length > 0 ?'search-' + searchparameters?.searched.map((search) => search.join('+')) : ''}`)
   }
-  // console.log(searchparameters)
 
 
   // return (

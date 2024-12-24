@@ -6,7 +6,7 @@ import useSignUpWithEmailAndPassword from '../../hooks/useSignUpWithEmailAndPass
 
 const Signup = ({setIsLogin}) => {
 	const [inputs, setInputs] = useState({
-		firstname: '',
+		firstname: '',  
         lastname: '',
         email: '',
         phone_no: '',

@@ -13,7 +13,7 @@ const AuthForm = ({param}) => {
             return false
         } else {
             return false
-        }
+        }  
     }
     const result = param? get_isLogin(param) : false
     const [isLogin, setIsLogin] = useState(result)

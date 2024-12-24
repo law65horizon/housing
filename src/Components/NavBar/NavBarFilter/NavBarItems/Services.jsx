@@ -44,7 +44,7 @@ const Services = ({showNav, setShowNav}) => {
               <Text className='main_text_color' fontSize={'1.5em'}>Services </Text>
               {/* <h2>dosi</h2> */}
               {showContent ? <GoTriangleUp size={30} /> : <GoTriangleDown size={30} />}
-            </Button>
+            </Button>  
             {showContent && (
             <VStack gap={4} py={2}
               bg={'white'} fontSize={'1.17em'}

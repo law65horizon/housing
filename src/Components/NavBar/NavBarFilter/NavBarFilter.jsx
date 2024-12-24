@@ -320,7 +320,7 @@ const NavBarFilter = ({searchdata}) => {
                 /> */}
                 <Select bg={'ButtonFace'} value={searchparameters.type || 'homes'} w={'50%'} fontSize={'small'} placeholder='Select'
                   onChange={(e) => setSearchParameters({...searchparameters, type: e.target.value})} display={{base: 'flex', sm: 'none'}}
-                >
+                >  
                   <option value='homes'>Homes</option>
                   <option value='office'>Office</option>
                   <option value='land'>Land</option>

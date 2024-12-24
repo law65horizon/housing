@@ -11,7 +11,7 @@ const DashBoard = () => {
           boxShadow={'0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'} 
           borderRadius={'10px'} as={RouterLink} to={'createpost'}
         >
-          <CardBody>
+          <CardBody>  
             <Image 
               src='/create.png'
               w={'64px'}

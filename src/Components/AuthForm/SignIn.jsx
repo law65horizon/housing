@@ -13,7 +13,7 @@ const SignIn = ({setIsLogin}) => {
   const [inputs, setInputs] = useState({
     email: '',
     password: ''
-  })
+  })  
   const {error, loading, login} = useLogin()
   const {sending, passwordReset} = usePasswordReset()
   return (<>

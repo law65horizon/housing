@@ -227,7 +227,7 @@ const Item = ({property, id}) => {
         <Box bg={'rgb(26 62 52)'} p={2} px={3}>
          {property?.agent}
         </Box>
-        }       
+        }         
       </Box>
       <Box as={RouterLink} to={`/property/${property?.id}`}>
         <AspectRatio maxW={'full'}>

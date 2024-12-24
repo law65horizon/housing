@@ -60,7 +60,7 @@ function App() {
          <Route path='/dashboard/properties/editpost' element={<EditPost />} />
         </>
        ): (
-        <>
+        <>  
          <Route path='/' element={<HomePage /> } />
         <Route path='/:uid' element={<View />} />
         <Route path='/property/:desc' element={<Property />} />
