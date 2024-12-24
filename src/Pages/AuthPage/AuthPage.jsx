@@ -1,4 +1,4 @@
-import { Box, Container, Flex, useMediaQuery, Image, Text, useMediaQuery, VStack } from '@chakra-ui/react'
+import { Box, Container, Flex, useMediaQuery, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import AuthForm from '../../Components/AuthForm/AuthForm'
 import { BsHouse } from 'react-icons/bs'
