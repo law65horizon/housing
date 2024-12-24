@@ -229,8 +229,8 @@ const Item = ({property, id}) => {
         </Box>
         }       
       </Box>
-      <Box>
-        <AspectRatio maxW={'full'} as={RouterLink} to={`/property/${property?.id}`}>
+      <Box as={RouterLink} to={`/property/${property?.id}`}>
+        <AspectRatio maxW={'full'} >
           <Image borderRadius={'5px'}
             src={property?.images[0]?.src}
             // src='/venice1.jpg'
