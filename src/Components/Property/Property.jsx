@@ -10,7 +10,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import { BsTrash3 } from 'react-icons/bs'
 // import useDeletePost from '../../../hooks/useDeletePost'
 // import EditPost from './EditPost'
-import useDeletePost from '../../hooks/useDeletePost'
+// import useDeletePost from '../../hooks/useDeletePost'
 import { FaRegStar, FaStar } from 'react-icons/fa6'
 import { CiLocationOn, CiStar, CiWifiOn } from 'react-icons/ci'
 import useAuthStore from '../../store/authStore'
@@ -229,8 +229,8 @@ const Item = ({property, id}) => {
         </Box>
         }       
       </Box>
-      <Box>
-        <AspectRatio maxW={'full'} as={RouterLink} to={`/property/${property?.id}`}>
+      <Box as={RouterLink} to={`/property/${property?.id}`}>
+        <AspectRatio maxW={'full'}>
           <Image borderRadius={'5px'}
             src={property?.images[0]?.src}
             // src='/venice1.jpg'

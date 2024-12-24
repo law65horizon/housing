@@ -13,23 +13,40 @@ const ContactUs = () => {
     })
   return (
     <Box w={'full'} bg={'ButtonFace'}>
-        <Box w={'full'} maxH={{base: '300px'}} pb={4} position={'relative'}>
-            {/* <AspectRatio maxH={'200px'} maxW={'full'} ratio={4/1}> */}
+        {/* <Box w={'full'} minH={{base: '400px'}} pb={4} position={'relative'} display={'flex'} flexDir={'column'} justifyContent={'center'} alignItems={'center'}>
+            <AspectRatio minH={'400px'} ratio={4/1.3}>
               <Image 
                 // src='/contact-us-img.jpeg' 
                 src='/banner.png'
                 objectFit={'cover'}
                 objectPosition={'center center'}
                 w={'full'}
-                maxH={'300px'}
+                maxH={'400px'}
               />
-            {/* </AspectRatio> */}
-            <Box position={'absolute'} gap={2} display={'flex'} flexDir={'column'} justifyContent={'center'} alignItems={'center'} zIndex={2} top={'50%'} left={'25%'}>
+            </AspectRatio>
+            <Box position={'absolute'} gap={2} display={'flex'} flexDir={'column'} justifyContent={'center'} alignItems={'center'} zIndex={2} >
                 <Heading>Contact Us</Heading>
                 <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates ratione ea cupiditate et nesciunt.</Text>
             </Box>
 
-        </Box>
+        </Box> */}
+
+        <Box w={'full'} minH={{base: '400px'}} pb={4} position={'relative'} display={'flex'} flexDir={'column'} justifyContent={'center'} alignItems={'center'}>
+          <AspectRatio w={'full'} minH={'400px'} ratio={4 / 1.3}>
+            <Image 
+                        // src='/contact-us-img.jpeg' 
+              src='/banner.png'
+              objectFit={'cover'}
+              objectPosition={'start center'}
+              w={'full'}
+              minH={'400px'}
+            />
+            </AspectRatio>
+            <Box position={'absolute'} gap={2} display={'flex'} flexDir={'column'} justifyContent={'center'} alignItems={'center'} zIndex={2}>
+              <Heading fontSize={'50px'}>Contact Us</Heading>
+              <Text maxW={'700px'} textAlign={'center'}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate commodi ex exercitationem officia quae. Exercitationem sint necessitatibus dolor labore rerum?</Text>
+            </Box>
+          </Box>
         <Container maxW={'6xl'} py={4} mt={'20px'}>
             <Box display={'flex'} flexDir={{base: 'column', md: 'row'}} gap={3}>
                 <Box boxShadow={'0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'} p={5} w={{base: 'full', md:'50%'}}

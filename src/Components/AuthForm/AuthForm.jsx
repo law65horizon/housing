@@ -12,11 +12,12 @@ const AuthForm = ({param}) => {
         }else if(param === 'sign_up') {
             return false
         } else {
-            return true
+            return false
         }
     }
-    const result = param? get_isLogin(param) : true
+    const result = param? get_isLogin(param) : false
     const [isLogin, setIsLogin] = useState(result)
+    console.log(param, result)
     return (
     <Box>
         <VStack spacing={4} w={'full'}>

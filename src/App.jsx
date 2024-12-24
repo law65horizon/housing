@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 // import PageLayout from './PageLayout/PageLayout'
 import { Navigate, Route, Routes } from 'react-router-dom'
@@ -9,13 +6,12 @@ import HomePage from './Pages/HomePage/HomePage'
 import View from './Pages/View/View'
 import AuthPage from './Pages/AuthPage/AuthPage'
 import Property from './Pages/View/Property'
-import Look from './Pages/View/Look'
 import Profile from './Pages/Profile/Profile'
 import Searches from './Pages/Profile/Searches'
 import SavedProperty from './Pages/Profile/SavedProperty'
 import { useAuthState } from 'react-firebase-hooks/auth'
 // import { auth } from './firebase/firebase'
-import Auth from './Components/xad/Dashboard/auth'
+import Auth from './Components/xad/Dashboard/Auth' 
 import DashBoard from './Components/xad/Dashboard/DashBoard'
 import { auth } from './FireBase/FireBase'
 import ManageProperties from './Components/xad/Dashboard/ManageProperties'
@@ -70,6 +66,7 @@ function App() {
         <Route path='/property/:desc' element={<Property />} />
         {/* <Route path='/auth' element={<AuthPage />  }  /> */}
         <Route path='/auth/:param' element={!user ? <AuthPage /> : <Navigate to={'/'} />} />
+        <Route path='/auth/' element={!user ? <AuthPage /> : <Navigate to={'/'} />} />
            <Route path='/me' element={<Profile />} />
            <Route path='/searches' element={<Searches />} />
            <Route path='/profile' element={<ProfileDesc />} />

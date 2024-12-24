@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { BsHouse } from 'react-icons/bs'
-import AuthIn from './authIn'
+import AuthIn from './AuthIn'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../../../FireBase/FireBase'
 

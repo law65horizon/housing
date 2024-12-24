@@ -14,6 +14,7 @@ const HomePage = () => {
   const {featured_post, isLoadingFeatured_post} = useGetFeaturedPosts()
   const searches = JSON.parse(localStorage.getItem('searches'))
   console.log(featured_post.length)
+  console.log(posts)
   return (
     <Box>
       <Hero />
@@ -46,10 +47,10 @@ const HomePage = () => {
         {/* featured projects */}
 
         {featured_post.length > 0 && (<>
-          <Flex justifyContent={'space-between'} p={5}>
-          <Heading>Featured Projects</Heading>
-          <Link textDecor={'underline'} as={RouterLink} to={'/any?featured-true'}>see all</Link>
-        </Flex>
+          <Flex justifyContent={'space-between'} p={5} alignItems={'end'}>
+            <Heading>Featured Projects</Heading>
+            <Link textDecor={'underline'} as={RouterLink} to={'/any?featured-true'}>see all</Link>
+          </Flex>
         <Flex gap={3} flexDir={{base: 'column',md: 'row'}}>
           {isLoadingFeatured_post && [0,1].map((index) => (
             <Skeleton key={index} w={'800px'}>

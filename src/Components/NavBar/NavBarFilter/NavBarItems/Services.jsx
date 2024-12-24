@@ -47,7 +47,7 @@ const Services = ({showNav, setShowNav}) => {
             </Button>
             {showContent && (
             <VStack gap={4} py={2}
-              bg={'white'} fontSize={'1.17em'} onClick={(() => showToast('success', 'jdojdo', 'success'))}
+              bg={'white'} fontSize={'1.17em'}
             >
               <Link w={'full'} as={RouterLink} to={'/buy'} pl={6} textTransform={'capitalize'}>Flats & Apartment for sale</Link>
               <Link w={'full'} as={RouterLink} to={'/rent'} pl={6} textTransform={'capitalize'}>Flats & Apartment for rent</Link>

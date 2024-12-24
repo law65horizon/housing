@@ -1,7 +1,7 @@
 import { AlertIcon, Box, Button, Divider, Flex, Heading, Image, Input, InputGroup, InputLeftElement, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, Text, useDisclosure, useMediaQuery, VStack } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { BiSearch, BiSearchAlt } from 'react-icons/bi'
-import DynamicLoad from '../DynamicLoad/DynamicLoad'
+// import DynamicLoad from '../DynamicLoad/DynamicLoad'
 import useSearchParam from '../../hooks/useSearchParam'
 import { CiLocationOn } from 'react-icons/ci'
 import { MdAddCircleOutline, MdCancel } from 'react-icons/md'

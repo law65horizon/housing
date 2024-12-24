@@ -2,7 +2,7 @@ import { AspectRatio, Avatar, Box, Button, Card, CardBody, Center, Container, Di
 import React, { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useParams } from 'react-router-dom'
 import { Link as RouterLink } from 'react-router-dom'
-import Explore from '../../Components/Explore/Explore'
+// import Explore from '../../Components/Explore/Explore'
 import { GiFlame } from 'react-icons/gi'
 import { BsWhatsapp } from 'react-icons/bs'
 import { PiBathtubLight, PiPhone } from 'react-icons/pi'
@@ -12,11 +12,11 @@ import { FaStar } from 'react-icons/fa6'
 import { CiLocationOn, CiStar } from 'react-icons/ci'
 import { RxDimensions } from 'react-icons/rx'
 import { IoCarSportOutline, IoLocationSharp } from 'react-icons/io5'
-import useGetPosts from '../../hooks/useGetPosts'
+// import useGetPosts from '../../hooks/useGetPosts'
 import Item from '../../Components/Property/Property'
 import useGetPostsByParam from '../../hooks/useGetPostsByParam'
 import useSearchStore from '../../store/searchStore'
-import Offline from '../../Components/ErrorComp/offline'
+import Offline from '../../Components/ErrorComp/Offline'
 
 const View = () => {
     let {uid} = useParams()

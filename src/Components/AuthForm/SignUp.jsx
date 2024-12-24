@@ -1,7 +1,6 @@
 import { AbsoluteCenter, Alert, AlertIcon, Box, Button, Divider, Flex, FormControl, Heading, Input, InputGroup, InputRightElement, Text, VStack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import GoogleAuth from './GoogleAuth'
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa6'
 import useSignUpWithEmailAndPassword from '../../hooks/useSignUpWithEmailAndPassword'
 
