@@ -4,6 +4,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import useShowToast from '../../hooks/useShowToast';
 import useAuthStore from '../../store/authStore';
 // import { auth, firestore } from '../../Firebase/Firebase';
+import { auth, firestore } from '../../FireBase/FireBase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { auth, firestore } from '../../FireBase/FireBase';
   

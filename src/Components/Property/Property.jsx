@@ -235,6 +235,7 @@ const Item = ({property, id}) => {
             src={property?.images[0]?.src}
             // src='/venice1.jpg'
             objectFit={'cover'}
+            zIndex={10}
             objectPosition={'center center'}
           />
         </AspectRatio>
