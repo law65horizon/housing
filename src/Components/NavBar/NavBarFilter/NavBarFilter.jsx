@@ -282,7 +282,7 @@ const NavBarFilter = ({searchdata}) => {
                 </Box>
               </Box>
               <Box bg={'ButtonFace'} display={{base: 'none', sm: 'flex'}} w={'20%'} px={4} borderRadius={'5px'} justifyContent={'center'} alignItems={'center'}>
-                <Button onClick={handleSearch}>
+                <Button onClick={handleSearch} w={'full'}>
                   Search
                 </Button>
               </Box>
@@ -326,7 +326,7 @@ const NavBarFilter = ({searchdata}) => {
                   <option value='land'>Land</option>
                   <option value='warehouses'>WareHouses</option>
                 </Select>
-                <Button display={'flex'} w={'50%'} justifyContent={'center'} alignItems={'center'} gap={1} onClick={onOpen}>
+                <Button display={'flex'} w={'50%'} bg={'ButtonFace'} justifyContent={'center'} alignItems={'center'} gap={1} onClick={onOpen}>
                   <Image
                     src='/filter.png'
                     objectFit={'cover'}
@@ -335,7 +335,7 @@ const NavBarFilter = ({searchdata}) => {
                   <Text>Filter</Text>
                 </Button>
                 <Box bg={'ButtonFace'} display={{base: 'flex', sm: 'none'}} w={'20%'} px={4} borderRadius={'5px'} justifyContent={'center'} alignItems={'center'}>
-                  <Button onClick={handleSearch}>
+                  <Button onClick={handleSearch} w={'full'}>
                     Search
                   </Button>
                 </Box>
